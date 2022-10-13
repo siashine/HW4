@@ -4,3 +4,12 @@
 // 5 -> 1, 8, 27, 64, 125
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
+
+Console.Clear();
+Console.Write("Введите число N: ");
+int number = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= number; i++)
+{ 
+    Console.WriteLine($"{i*i*i} ");
+}
