@@ -7,15 +7,19 @@
 
 Console.Clear();
 Console.Write("Введите пятизначный палиндром: ");
-int palindrom = int.Parse(Console.ReadLine());
+string palindrom = Console.ReadLine();
 
-if([0] == [4])
-
-if([1] == [3])
+void Checkpalindrom(string palindrom)
 {
-  Console.WriteLine($"Число {palindrom} является палиндромом");
+  if (palindrom[0] == palindrom[4] || palindrom[1] == palindrom[3])
+  {
+    Console.WriteLine($"Ваше число: {palindrom} - палиндром.");
+  }
+  else Console.WriteLine($"Ваше число: {palindrom} - НЕ палиндром.");
 }
 
-else {
-   Console.WriteLine($"Число {palindrom} НЕ является палиндромом");
+if (palindrom.Length == 5)
+{
+  Checkpalindrom(palindrom);
 }
+else Console.WriteLine($"Введи правильное число");
